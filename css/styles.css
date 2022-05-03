@@ -14,14 +14,7 @@ body {
     /* identical to box height */
     background-color:var(--background-color)
 }
-h1,
-h2,
-h3,
-p,
-{
-margin-top: 0;
-margin-bottom: 0;
-}
+
 .container{
     width: 1230px;
     padding-left: 15px;
@@ -31,7 +24,8 @@ margin-bottom: 0;
 
 .header-color{
   background-color: var(--background-color);
-  display: inline-block
+  display:flex;
+
 }
 .logo {
     color: var(--accent-text-color);
@@ -53,7 +47,7 @@ letter-spacing: 0.03em;
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
-    display: inline-block;
+    display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
 } 
@@ -69,18 +63,27 @@ letter-spacing: 0.03em;
 }
 
 .nav-menu{
-    display: inline-block;
-    margin-left: 93px;
-    word-spacing: 54px;
-    padding: 0px;
+    display: flex;
+    margin: 0px;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   padding-left: 93px;
+   padding-right: 0px;
+
+
 }
 .nav-menu li {
     list-style: none;
-display: inline-block;
-word-spacing: 54px;
+display:flex;
+
+
 
 }
- .nav-link{
+.nav-menu:last-child{
+    padding-right: 0px;
+}
+
+.nav-link{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -89,7 +92,7 @@ word-spacing: 54px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     
  }
  .nav-link:focus {
@@ -98,6 +101,26 @@ color: var(--accent-text-color);
  .nav-link:hover {
      color: var(--accent-text-color)
  }
+.nav-link-portfolio {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+    display: flex;
+     padding-right: 50px;
+}
+
+.nav-link:focus {
+    color: var(--accent-text-color);
+}
+
+.nav-link:hover {
+    color: var(--accent-text-color)
+}
  .link-ative{
      color:var(--accent-text-color);
     font-family: 'Roboto';
@@ -107,20 +130,27 @@ color: var(--accent-text-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    padding-right: 50px;
 
  }
 
 .cont-position{
-     display: inline-block;
-   padding-top: 32px ;
+    display: flex;
+    margin: 0px;
+}
+.contacts{
+display: flex;
+margin: 0px;
+padding-left: 331px;
+padding-top: 32px;
+padding-bottom: 32px;
+
 }
 
 .contacts li{
     list-style: none;
-    display: inline-block;
-   padding-top: 32px;
-   padding-bottom: 100;
+   
   
 }
 .contacts:hover,.contacts:focus{
@@ -133,12 +163,12 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
-display: inline;
-margin-left: 863px;
-word-spacing: 50px;
+padding-right: 50px;
+/* margin-right: 50px; */
+
 
 color:#757575
 
@@ -152,10 +182,10 @@ color:#757575
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: inline;
+  
 
     color: #757575
 }
