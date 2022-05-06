@@ -17,6 +17,7 @@ body {
 }
 h1,h2,h3,p,ul{
     margin: 0px;
+    padding-left: 0px;
 }
 .section{
     padding:94px 0px;
@@ -446,18 +447,28 @@ margin-bottom: 9px;
 
 
 /* Портфолио */
+.main-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.portf-ul-container{
+    display: flex;
+}
 
 .portf-ul {
     display: flex;
- 
-   
-    
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
+
 
 .portf-li{
     list-style: none;
     margin-right: 8px;
+
 }
 .portf-li:last-child{
     margin-right: 0px;
@@ -543,24 +554,40 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
 }
 /* Проєкти */
+    
+
+.progect-list-container {
+    display: flex;
+    width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+    
+
 
 }
-.progekt-list{
-    
-    Width :370px;
-     Height: 404px;
-}
-.progekt-list .item{
+
+
+.progect-list .item{
 list-style: none;
+Width: 370px;
+ Height: 404px;
+border: 1px solid rgba(238, 238, 238, 1);
+margin-right: 30px;
+margin-bottom: 30px;
+display:inline-block;
+
 }
-.progekt-list p {
+.progect-list .item:nth-child(3n){
+    margin-right: 0px;
+}
+.progect-list p {
 color: var(--primary-text-color);
 font-family: 'Roboto';
 font-size: 16px;
 line-height:1.87;
 letter-spacing: 0.03em;
 }
-.progekt-list h3{
+.progect-list h3{
 color: var(--title-text-color);
 font-family: 'Roboto';
 font-style: normal;
