@@ -19,6 +19,11 @@ h1,h2,h3,p,ul{
     margin: 0px;
     padding-left: 0px;
 }
+    img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
 .section{
     padding:94px 0px;
 }
@@ -558,23 +563,26 @@ letter-spacing: 0.03em;
 
 .progect-list-container {
     display: flex;
+    flex-wrap: wrap;
+ 
     width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
-    
-
+      box-sizing: content-box;
 
 }
 
 
 .progect-list .item{
 list-style: none;
+
 Width: 370px;
  Height: 404px;
-border: 1px solid rgba(238, 238, 238, 1);
 margin-right: 30px;
 margin-bottom: 30px;
 display:inline-block;
+justify-content: space-between;
+
 
 }
 .progect-list .item:nth-child(3n){
@@ -595,4 +603,13 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+}
+.progect-img{
+    max-width: 100%;
+    height: auto;
+}
+.progekt-signature{
+    padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: 0px;
 }
