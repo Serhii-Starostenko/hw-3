@@ -533,10 +533,7 @@ padding: 6px 22px;
 .progect-list-container {
     display: flex;
     flex-wrap: wrap;
- /* margin: 0 auto; */
-    width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
+ 
       box-sizing: content-box;
 
 }
