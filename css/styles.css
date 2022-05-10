@@ -204,6 +204,7 @@ padding: 200px 0px;
 text-align: center;
 }
 
+
 .hero-container{
 width: 1200px;
 padding-left: 15px;
@@ -414,7 +415,7 @@ padding-bottom: 30px;
     width: 1200px;
     padding-left: 15px;
         padding-right: 15px;
-        display: block;
+
         margin: 0 auto;
 }
 
